@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Toluwalase Aro</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Toluwalase Aro</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skill" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile" style="height: 600px;">
+    <div class="section__pic-container">
+        <img src="about_me.jpg" alt="Toluwalase Aro profile picture" />
+    </div>
+    <div class="section__text">
+        <p class="section_text_p1">Hello, I am</p>
+        <h1 class="title">Toluwalase Aro</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img
+                    src="linkedin.jpg"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='http://linkedin.com/in/aro-toluwalase-b1a9a8229'"
+            />
+            <img
+                    src="github.jpg"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/Tadd22'"
+            />
+        </div>
+    </div>
+</section>
+
+<div class="page-break">
+    ...
+</div>
+
+<section id="about" style="height: 700px;">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img
+                            src="experience.jpg"
+                            alt="Experience icon"
+                            class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>2+ years <br />Frontend Development</p>
+                </div>
+                <div class="details-container">
+                    <img
+                            src="education.jpg"
+                            alt="Education icon"
+                            class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>B.Sc. Bachelors Degree<br /> Computer Science</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Specialize in crafting intuitive designs that bring ideas to life, blending creativity with
+                    technical expertise. Dedicated to delivering clean, efficient and accessible code, ensuring
+                    every project exceeds expectations. Let’s build something amazing together!
+                </p>
+                <p style="color: #1d899d; font-style: normal" >I am very flexible with time zone communications.</p>
+                <video autoplay loop muted playsinline width="100px">
+                    <source src="globe.mp4" type="video/mp4">
+                    <img src="" alt="Time zone flexibility indicator"> <!-- Fallback image if video doesn't load -->
+                </video>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skill" class="container-skills" style="height: 300px;">
+    <div class="skills-details-container">
+        <h1 class="title">Skills</h1>
+        <div class="skill_images">
+            <div class="img" onmouseover="showText(1)" onmouseout="hideText(1)">
+                <img src="html.jpg" alt="skill">
+                <div class="overlay-text" style="color:#FF4B1E">HTML</div>
+            </div>
+            <div class="img" onmouseover="showText(2)" onmouseout="hideText(2)">
+                <img src="tailwind.jpg" alt="skill">
+                <div class="overlay-text" style="color:#08938d">TAILWIND</div>
+            </div>
+            <div class="img" onmouseover="showText(3)" onmouseout="hideText(3)">
+                <img src="js..jpg" alt="skill">
+                <div class="overlay-text" style="color:#FFDF00">JAVASCRIPT</div>
+            </div>
+            <div class="img" onmouseover="showText(4)" onmouseout="hideText(4)">
+                <img src="sass.jpg" alt="skill">
+                <div class="overlay-text" style="color:#CC6699">SCSS/SASS</div>
+            </div>
+            <div class="img" onmouseover="showText(5)" onmouseout="hideText(5)">
+                <img src="react.jpg" alt="skill">
+                <div class="overlay-text" style="color:#12c7c7">REACT</div>
+            </div>
+            <div class="img" onmouseover="showText(6)" onmouseout="hideText(6)">
+                <img src="bootstrap.jpg" alt="skill">
+                <div class="overlay-text" style="color:#5E3B7F">BOOTSTRAP</div>
+            </div>
+            <div class="img" onmouseover="showText(7)" onmouseout="hideText(8)">
+                <img src="figma.jpg" alt="skill">
+                <div class="overlay-text" style="color:#0cc07e">FIGMA</div>
+            </div>
+            <div class="img" onmouseover="showText(8)" onmouseout="hideText(9)">
+                <img src="typescript.jpg" alt="skill">
+                <div class="overlay-text" style="color:#1e65af">TYPESCRIPT</div>
+            </div>
+            <div class="img" onmouseover="showText(9)" onmouseout="hideText(13)">
+                <img src="github.jpg" alt="skill">
+                <div class="overlay-text" style="color:black">GITHUB</div>
+            </div>
+            <div class="img" onmouseover="showText(10)" onmouseout="hideText(13)">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="page-break">...
+</div>
+
+<section id="projects">
+    <h1 class="title">A small selection of <span style="color:#1d899d "> Recent Projects</span></h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">TechTrivia Quiz (Project One)</h2>
+                <div class="article-container">
+                    <img
+                            src="TechTrivia.jpg"
+                            alt="TechTrivia Quiz"
+                            class="project-img"
+                    />
+                </div>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Tadd22'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://tadd22.github.io/TechTriviaQuiz/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Farmers Market (Project Two)</h2>
+                <div class="article-container">
+                    <img
+                            src="project2.jpg"
+                            alt="Project 2"
+                            class="project-img"
+                    />
+                </div>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Tadd22'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://tadd22.github.io/FFMarket/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img
+                            src="sugarplum.png"
+                            alt="Project 3"
+                            class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">A Bakery (Project Three)</h2>
+                <div class="btn-container">
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                    >
+                        Github
+                    </button>
+                    <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://tadd22.github.io/sugarplumbakery/'"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img
+                    src="mail.jpg"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:arodiana2019@gmail.com">Shoot a mail!</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+                    src="linkedin.jpg"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+            />
+            <p><a href="http://linkedin.com/in/aro-toluwalase-b1a9a8229">LinkedIn</a></p>
+        </div>
+    </div>
+</section>
+<footer style="height: 100px">
+    <nav style="height: 50px" id="nav-below">
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Toluwalase Aro. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
